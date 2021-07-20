@@ -1,0 +1,92 @@
+/* a aplicação do asterisco (*) no arquivo CSS informa ao navegador 
+que TODOS  os elementos da ela receberam ala formatação */
+
+*{ 
+margin: 0; /* estamos zerando as margens interna do elementos */
+    
+padding: 0; /*estamos zerando as margens interna do elementos */
+    
+} 
+
+/* Vamo aplicar na tag  header cor de fundo e padding */
+
+header{
+
+    /* background-image é a linha que define a imagem de fundo na tag header  */
+    background-image: url(../img/cafe5.jpg);
+    background-size: 100%;
+    background-position: 0 -300px;
+    padding-top: 150px;
+    transition: ease 2s;
+}
+
+    /*formatar a tag h1 dentro do header. veja como faz */
+
+    header h1{
+        color: #fff; /* cor da letra */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* estilo de fonta da letra */
+        text-align:center; /* alinhamento do texto ao centro */
+    }
+
+    header nav{
+        background-color: rgb(43, 41, 41); /* cor da letra */
+        text-align: center; /* alinhamento do texto ao centro */
+        padding: 5px;
+    }
+
+    /* Exibir os itens da lista um ao lado do outro . Usaremos 
+    o comando (display) |tela|exibir| inline-block (blocos em linha) */
+    header nav ul li{
+        display: inline-block;
+        margin: 10px;
+    }
+
+header nav ul li a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: chartreuse;
+}
+
+footer{
+    /* aplicar uma cor de fundo ao rodapé do site */
+    background-color: darkgoldenrod;
+    /* aplicar margem interna com o comando padding */
+    padding: 20px;
+    padding-top: 40px;
+    height: 150px;    /* altura do rodapé */
+}
+
+footer #end{
+    /* para fazer a formatação de uma tag que tem ID  definido eé necessario
+    que voce direcione um sustenido (#) ao inicio do nome do ID.
+    neste caso nossa div tem o ID chamado end, então aplicamos desta forma #end */
+    color:#fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    border:solid 1px black;
+} 
+
+footer #redes{
+border: solid 1px black;
+float: right;
+}
+
+footer #redes a{
+    text-decoration: none;
+}
+
+footer #redes a img{
+    width: 40px;    /* diminuir a largura da imagem */
+    height: 40px;    /*diminuir a  altura da imagem  */
+    margin: 10px;    /* aumenta ou diminui a distancia entre as imagens */
+transition: ease .5s;
+}
+
+footer #redes a img:hover{
+    /* realizar uma rotação de 360° graus (deg) ao passar o mouse sobre a imagem */
+    transform: rotate(360deg);
+}
